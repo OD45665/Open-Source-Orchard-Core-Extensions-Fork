@@ -42,7 +42,7 @@
     <PackageReference Include="Lombiq.OrchardCoreApiClient.Tests.UI" Version="6.0.1-alpha.0.osoe-909" />
     <PackageReference Include="Lombiq.Privacy.Tests.UI" Version="9.0.0" />
     <PackageReference Include="Lombiq.HelpfulExtensions.Tests.UI" Version="9.0.0" />
-    <PackageReference Include="Lombiq.Tests.UI" Version="11.0.0" />
+    <PackageReference Include="Lombiq.Tests.UI" Version="11.0.1-alpha.0.infra-164" />
     <PackageReference Include="Lombiq.VueJs.Tests.UI" Version="7.0.0" />
     <PackageReference Include="Lombiq.Walkthroughs.Tests.UI" Version="2.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
