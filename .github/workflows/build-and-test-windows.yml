@@ -36,7 +36,7 @@ jobs:
             github.event.label.name == 'run-windows-build' ||
             (github.event.review.state == 'APPROVED' && contains(github.event.pull_request.labels.*.name, 'requires-windows-build')))
     name: Build and Test Windows - root solution (larger runners)
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/INFRA-164
     with:
       parent-job-name: root-solution-larger-runners
       machine-types: '["windows-2022-8core"]'
@@ -76,7 +76,7 @@ jobs:
         github.event.label.name == 'run-windows-build' ||
         (github.event.review.state == 'APPROVED' && contains(github.event.pull_request.labels.*.name, 'requires-windows-build'))
     name: Build and Test Windows - NuGetTest solution
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/INFRA-164
     with:
       parent-job-name: nuget-solution
       machine-types: '["windows-2022"]'
@@ -98,7 +98,7 @@ jobs:
         github.event.label.name == 'run-windows-build' ||
         (github.event.review.state == 'APPROVED' && contains(github.event.pull_request.labels.*.name, 'requires-windows-build'))
     name: PowerShell Static Code Analysis Windows
-    uses: Lombiq/PowerShell-Analyzers/.github/workflows/static-code-analysis.yml@dev
+    uses: Lombiq/PowerShell-Analyzers/.github/workflows/static-code-analysis.yml@issue/INFRA-164
     with:
       machine-types: '["windows-2022"]'
       run-windows-powershell: 'false'
