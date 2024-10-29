@@ -43,7 +43,6 @@ jobs:
     uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/INFRA-164
     with:
       parent-job-name: nuget-solution
-      machine-types: '["ubuntu-24.04"]'
       build-directory: NuGetTest
       timeout-minutes: 20
       dotnet-test-process-timeout: 480000
