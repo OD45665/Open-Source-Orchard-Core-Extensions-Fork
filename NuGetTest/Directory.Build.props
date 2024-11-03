@@ -1,12 +1,8 @@
 <Project>
   <PropertyGroup>
     <NuGetTestbed>true</NuGetTestbed>
-    <UseGlobalNodeJsExtensionsNpmPackage>false</UseGlobalNodeJsExtensionsNpmPackage>
-    <NodeJsExtensionsNpmPackageSourcePath></NodeJsExtensionsNpmPackageSourcePath>
-    <!-- Instruct Node.js Extensions to create .eslintrc and .stylelintrc files in the parent directory, which is the
-         OSOCE root directory. -->
-    <NodeJsExtensionsGlobalESLintConfigurationDirectory>$(MSBuildThisFileDirectory)..</NodeJsExtensionsGlobalESLintConfigurationDirectory>
-    <NodeJsExtensionsGlobalStylelintConfigurationDirectory>$(MSBuildThisFileDirectory)..</NodeJsExtensionsGlobalStylelintConfigurationDirectory>
+    <UseGlobalNodeJsExtensionsNpmPackage>true</UseGlobalNodeJsExtensionsNpmPackage>
+    <NodeJsExtensionsNpmPackageSourcePath>$(MSBuildThisFileDirectory)node_modules/.nx</NodeJsExtensionsNpmPackageSourcePath>
   </PropertyGroup>
 
   <ItemGroup>
