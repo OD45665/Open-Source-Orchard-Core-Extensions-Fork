@@ -32,7 +32,7 @@ public class UITestBase : OrchardCoreUITestBase<Program>
             async configuration =>
             {
                 configuration.AssertAppLogsAsync =
-                    OrchardCoreUITestExecutorConfiguration.AssertAppLogsCanContainWarningsAndCacheFolderErrorsAsync;
+                    OrchardCoreUITestExecutorConfiguration.AssertAppLogsCanContainCacheFolderErrorsAsync;
 
                 // These two can be removed once  https://github.com/OrchardCMS/OrchardCore/issues/15222 is done.
                 configuration.AssertBrowserLog = AssertHtmlAndBrowserErrorsHelper.AssertNoNativeButtonUsageInBrowserLog;
