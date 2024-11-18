@@ -21,5 +21,5 @@ public class BehaviorIdleTenantsTests : UITestBase
                 await context.SignInDirectlyAsync();
                 await context.TestIdleTenantManagerBehaviorAsync();
             },
-            configuration => configuration.SetMaxIdleMinutesAndLoggingForUITest());
+            configuration => configuration.ConfigureIdleTenantManagementTestSettings());
 }
