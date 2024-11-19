@@ -41,7 +41,5 @@ public abstract class UITestBase : OrchardCoreUITestBase<Program>
 
         configuration.BrowserConfiguration.Headless =
             TestConfigurationManager.GetBoolConfiguration("BrowserConfiguration:Headless", defaultValue: false);
-
-        configuration.AssertAppLogsAsync = OrchardCoreUITestExecutorConfiguration.AssertAppLogsCanContainWarningsAndCacheFolderErrorsAsync;
     }
 }
