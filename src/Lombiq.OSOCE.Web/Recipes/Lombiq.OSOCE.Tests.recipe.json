@@ -166,44 +166,6 @@
             "ManageWorkflows",
             "ExecuteWorkflows"
           ]
-        },
-        {
-          "Name": "Administrator",
-          "Description": "Administrator role",
-          "Permissions": [
-            "ManageSettings",
-            "AccessAdminPanel",
-            "ManageAdminSettings",
-            "ManageUsers",
-            "ManageRoles",
-            "SiteOwner",
-            "ManageTenants",
-            "ApplyTheme",
-            "PublishContent",
-            "EditContent",
-            "DeleteContent",
-            "PreviewContent",
-            "CloneContent",
-            "AccessContentApi",
-            "ListContent",
-            "ViewContentTypes",
-            "EditContentTypes",
-            "ManageMediaContent",
-            "ManageAttachedMediaFieldsFolder",
-            "ManageMediaProfiles",
-            "ViewMediaOptions",
-            "ManageAssetCache",
-            "ViewAzureMediaOptions",
-            "ManageBackgroundTasks",
-            "ManageEmailSettings",
-            "ManageWorkflows",
-            "ExecuteWorkflows",
-            "SetHomepage",
-            "Import",
-            "Export",
-            "ViewAuditTrail",
-            "ManageAuditTrailSettings"
-          ]
         }
       ]
     },
