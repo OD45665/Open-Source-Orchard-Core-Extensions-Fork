@@ -12,9 +12,7 @@ public class BehaviorOrchardCoreApiClientTests : UITestBase
     {
     }
 
-#pragma warning disable xUnit1004 // Test methods should not be skipped
-    [Fact(Skip = "Needs https://github.com/OrchardCMS/OrchardCore/issues/17083 to be fixed.")]
-#pragma warning restore xUnit1004 // Test methods should not be skipped
+    [Fact]
     public Task OrchardCoreApiClientShouldWork() =>
         ExecuteTestAfterSetupAsync(context => context.TestOrchardCoreApiClientBehaviorAsync());
 }
