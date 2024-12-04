@@ -21,6 +21,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners1:
     name: Build and Test Windows - root solution (standard runners) 1
@@ -35,6 +36,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners2:
     name: Build and Test Windows - root solution (standard runners) 2
@@ -49,6 +51,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners3:
     name: Build and Test Windows - root solution (standard runners) 3
@@ -63,6 +66,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners4:
     name: Build and Test Windows - root solution (standard runners) 4
@@ -77,6 +81,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners5:
     name: Build and Test Windows - root solution (standard runners) 5
@@ -91,6 +96,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners6:
     name: Build and Test Windows - root solution (standard runners) 6
@@ -105,6 +111,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners7:
     name: Build and Test Windows - root solution (standard runners) 7
@@ -119,6 +126,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners8:
     name: Build and Test Windows - root solution (standard runners) 8
@@ -133,6 +141,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-standard-runners9:
     name: Build and Test Windows - root solution (standard runners) 9
@@ -147,6 +156,7 @@ jobs:
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test0:
     name: Build and Test Windows - NuGetTest solution 0
@@ -159,6 +169,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test1:
     name: Build and Test Windows - NuGetTest solution 1
@@ -171,6 +182,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test2:
     name: Build and Test Windows - NuGetTest solution 2
@@ -183,6 +195,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test3:
     name: Build and Test Windows - NuGetTest solution 3
@@ -195,6 +208,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test4:
     name: Build and Test Windows - NuGetTest solution 4
@@ -207,6 +221,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test5:
     name: Build and Test Windows - NuGetTest solution 5
@@ -219,6 +234,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test6:
     name: Build and Test Windows - NuGetTest solution 6
@@ -231,6 +247,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test7:
     name: Build and Test Windows - NuGetTest solution 7
@@ -243,6 +260,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test8:
     name: Build and Test Windows - NuGetTest solution 8
@@ -255,6 +273,7 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
 
   build-and-test-nuget-test9:
     name: Build and Test Windows - NuGetTest solution 9
@@ -267,3 +286,4 @@ jobs:
       dotnet-test-process-timeout: 540000
       test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
