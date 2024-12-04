@@ -10,7 +10,7 @@ on:
 jobs:
   build-and-test-standard-runners0:
     name: Build and Test Windows - root solution (standard runners) 0
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners0
       machine-types: '["windows-2022"]'
@@ -25,7 +25,7 @@ jobs:
 
   build-and-test-standard-runners1:
     name: Build and Test Windows - root solution (standard runners) 1
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners1
       machine-types: '["windows-2022"]'
@@ -40,7 +40,7 @@ jobs:
 
   build-and-test-standard-runners2:
     name: Build and Test Windows - root solution (standard runners) 2
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners2
       machine-types: '["windows-2022"]'
@@ -55,7 +55,7 @@ jobs:
 
   build-and-test-standard-runners3:
     name: Build and Test Windows - root solution (standard runners) 3
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners3
       machine-types: '["windows-2022"]'
@@ -70,7 +70,7 @@ jobs:
 
   build-and-test-standard-runners4:
     name: Build and Test Windows - root solution (standard runners) 4
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners4
       machine-types: '["windows-2022"]'
@@ -85,7 +85,7 @@ jobs:
 
   build-and-test-standard-runners5:
     name: Build and Test Windows - root solution (standard runners) 5
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners5
       machine-types: '["windows-2022"]'
@@ -100,7 +100,7 @@ jobs:
 
   build-and-test-standard-runners6:
     name: Build and Test Windows - root solution (standard runners) 6
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners6
       machine-types: '["windows-2022"]'
@@ -115,7 +115,7 @@ jobs:
 
   build-and-test-standard-runners7:
     name: Build and Test Windows - root solution (standard runners) 7
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners7
       machine-types: '["windows-2022"]'
@@ -130,7 +130,7 @@ jobs:
 
   build-and-test-standard-runners8:
     name: Build and Test Windows - root solution (standard runners) 8
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners8
       machine-types: '["windows-2022"]'
@@ -145,7 +145,7 @@ jobs:
 
   build-and-test-standard-runners9:
     name: Build and Test Windows - root solution (standard runners) 9
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
     with:
       parent-job-name: root-solution-standard-runners9
       machine-types: '["windows-2022"]'
@@ -155,135 +155,5 @@ jobs:
       build-create-binary-log: 'true'
       dotnet-test-process-timeout: 840000
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test0:
-    name: Build and Test Windows - NuGetTest solution 0
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution0
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test1:
-    name: Build and Test Windows - NuGetTest solution 1
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution1
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test2:
-    name: Build and Test Windows - NuGetTest solution 2
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution2
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test3:
-    name: Build and Test Windows - NuGetTest solution 3
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution3
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test4:
-    name: Build and Test Windows - NuGetTest solution 4
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution4
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test5:
-    name: Build and Test Windows - NuGetTest solution 5
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution5
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test6:
-    name: Build and Test Windows - NuGetTest solution 6
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution6
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test7:
-    name: Build and Test Windows - NuGetTest solution 7
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution7
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test8:
-    name: Build and Test Windows - NuGetTest solution 8
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution8
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
-      cancel-in-progress-for-this-pr: 'false'
-      cancel-workflow-on-failure: 'false'
-
-  build-and-test-nuget-test9:
-    name: Build and Test Windows - NuGetTest solution 9
-    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@dev
-    with:
-      parent-job-name: nuget-solution9
-      machine-types: '["windows-2022"]'
-      build-directory: NuGetTest
-      timeout-minutes: 30
-      dotnet-test-process-timeout: 540000
-      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
       cancel-in-progress-for-this-pr: 'false'
       cancel-workflow-on-failure: 'false'
