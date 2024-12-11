@@ -157,3 +157,133 @@ jobs:
       test-filter: FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests
       cancel-in-progress-for-this-pr: 'false'
       cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test0:
+    name: Build and Test Windows - NuGetTest solution 0
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution0
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test1:
+    name: Build and Test Windows - NuGetTest solution 1
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution1
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test2:
+    name: Build and Test Windows - NuGetTest solution 2
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution2
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test3:
+    name: Build and Test Windows - NuGetTest solution 3
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution3
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test4:
+    name: Build and Test Windows - NuGetTest solution 4
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution4
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test5:
+    name: Build and Test Windows - NuGetTest solution 5
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution5
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test6:
+    name: Build and Test Windows - NuGetTest solution 6
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution6
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test7:
+    name: Build and Test Windows - NuGetTest solution 7
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution7
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test8:
+    name: Build and Test Windows - NuGetTest solution 8
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution8
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
+
+  build-and-test-nuget-test9:
+    name: Build and Test Windows - NuGetTest solution 9
+    uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-orchard-core.yml@issue/OSOE-928
+    with:
+      parent-job-name: nuget-solution9
+      machine-types: '["windows-2022"]'
+      build-directory: NuGetTest
+      timeout-minutes: 30
+      dotnet-test-process-timeout: 540000
+      test-filter: 'FullyQualifiedName!~SecurityScanningTests&FullyQualifiedName!~BehaviorElasticsearchTests'
+      cancel-in-progress-for-this-pr: 'false'
+      cancel-workflow-on-failure: 'false'
