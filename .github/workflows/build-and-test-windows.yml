@@ -8,7 +8,7 @@ on:
 
 jobs:
   dump-github-context-8-core:
-    runs-on: windows-2022-8core
+    runs-on: warp-ubuntu-2404-x64-8x
     steps:
     - env:
         GITHUB_CONTEXT: ${{ toJSON(runner) }}
@@ -16,7 +16,7 @@ jobs:
       run: Write-Output $Env:GITHUB_CONTEXT
 
   dump-github-context-standard:
-      runs-on: windows-2022
+      runs-on: warp-ubuntu-2404-x64-4x
       steps:
       - env:
           GITHUB_CONTEXT: ${{ toJSON(runner) }}
