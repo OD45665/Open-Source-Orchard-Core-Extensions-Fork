@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-2022-8core
     steps:
     - env:
-        GITHUB_CONTEXT: ${{ toJSON(github) }}
+        GITHUB_CONTEXT: ${{ toJSON(runner) }}
       shell: pwsh
       run: Write-Output $Env:GITHUB_CONTEXT
 
@@ -19,7 +19,7 @@ jobs:
       runs-on: windows-2022
       steps:
       - env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
+          GITHUB_CONTEXT: ${{ toJSON(runner) }}
         shell: pwsh
         run: Write-Output $Env:GITHUB_CONTEXT
           
