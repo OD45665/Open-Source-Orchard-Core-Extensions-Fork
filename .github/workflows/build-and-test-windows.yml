@@ -15,11 +15,11 @@ jobs:
       shell: pwsh
       run: Write-Output $Env:GITHUB_CONTEXT
 
-dump-github-context-standard:
-    runs-on: windows-2022
-    steps:
-    - env:
-        GITHUB_CONTEXT: ${{ toJSON(github) }}
-      shell: pwsh
-      run: Write-Output $Env:GITHUB_CONTEXT
+  dump-github-context-standard:
+      runs-on: windows-2022
+      steps:
+      - env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        shell: pwsh
+        run: Write-Output $Env:GITHUB_CONTEXT
           
