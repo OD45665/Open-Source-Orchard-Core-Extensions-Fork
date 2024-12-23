@@ -67,7 +67,7 @@ jobs:
 
   powershell-static-code-analysis:
     name: PowerShell Static Code Analysis
-    uses: Lombiq/PowerShell-Analyzers/.github/workflows/static-code-analysis.yml@renovate/all-updates
+    uses: Lombiq/PowerShell-Analyzers/.github/workflows/static-code-analysis.yml@dev
     with:
       machine-types: "['ubuntu-24.04']"
 
